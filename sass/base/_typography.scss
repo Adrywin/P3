@@ -2,6 +2,12 @@
 
 $shrik: 'Shrikhand', sans-serif;
 
+.menu {
+    
+    &__n-title {
+        font-family: $shrik;
+    }
+}
 
 h1, h2, h3, h4, h5, h6, p {
     font-family: 'Roboto', sans-serif;

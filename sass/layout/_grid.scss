@@ -9,14 +9,14 @@ div#grid-container {
     height: 100vh;
 }
 
-header {
+.header {
     grid-area: header;
 }
 
-main {
+.main {
     grid-area: main;
 }
 
-footer {
+.footer {
     grid-area: footer;
 }

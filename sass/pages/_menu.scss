@@ -1,0 +1,25 @@
+@use '../base';
+
+.front {
+    &__img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+.menu {
+    @include base.bg-lightgray;
+    padding: 16px;
+
+    &__name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__repas {
+        background-color: white;
+        border-radius: 20px;
+    }
+}
