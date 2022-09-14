@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand:wght@100;200;300;400;500;600;700;800;900&display=swap");
 div#grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -23,7 +23,7 @@ div#grid-container {
   font-family: "Shrikhand", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, button, li {
   font-family: "Roboto", sans-serif;
 }
 
@@ -39,8 +39,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 .footer {
   background-color: rgb(47, 47, 47);
-  padding: 0px 32px;
-  color: whitesmoke;
+  padding: 16px 32px;
+  color: white;
+}
+.footer__title {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
 }
 .footer__nav {
   display: flex;
@@ -48,8 +53,12 @@ h1, h2, h3, h4, h5, h6, p {
   list-style-type: none;
   padding: 0;
 }
-.footer__title {
-  font-family: "Shrikhand", sans-serif;
+.footer li {
+  margin-bottom: 8px;
+}
+.footer i {
+  margin-right: 5px;
+  width: 20px;
 }
 
 .desc__location {
@@ -126,24 +135,88 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+.header__arrow {
+  align-self: center;
+  position: absolute;
+  left: 16px;
+}
+
+.front {
+  z-index: -1;
+  position: relative;
+}
 .front__img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 250px;
+  object-fit: cover;
+}
+
+.shadow {
+  box-shadow: 0 10px 10px 1px rgb(231, 231, 231);
 }
 
 .menu {
   background-color: rgb(245, 245, 245);
+  margin-top: -50px;
   padding: 16px;
+  border-radius: 32px 32px 0px 0px;
+}
+.menu h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 3px solid #99E2D0;
+  width: 45px;
 }
 .menu__name {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 95%;
+}
+.menu__name > i {
+  font-size: 32px;
+}
+.menu__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .menu__repas {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2px 10px 0 10px;
   border-radius: 20px;
+}
+.menu__title {
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 0;
+}
+.menu__subtitles {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__subtitle {
+  font-weight: 300;
+}
+.menu__price {
+  font-weight: 500;
+}
+
+.btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  font-weight: 400;
+}
+
+.menu__btn {
+  margin: 32px 0px 50px 0px;
+  width: 175px;
+  height: 48px;
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */

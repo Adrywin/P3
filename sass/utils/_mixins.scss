@@ -19,3 +19,8 @@
 @mixin bg-darkgray {
     background-color: v.$gris-f;
 }
+
+@mixin border-menu {
+    border-bottom: 3px solid v.$color-tertiary;
+    width: 45px;
+}

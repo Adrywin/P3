@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 $shrik: 'Shrikhand', sans-serif;
 
@@ -9,7 +9,7 @@ $shrik: 'Shrikhand', sans-serif;
     }
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, button, li {
     font-family: 'Roboto', sans-serif;
 }
 
