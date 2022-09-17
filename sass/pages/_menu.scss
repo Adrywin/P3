@@ -21,11 +21,13 @@
 }
 
 .menu {
+    display: flex;
+    flex-direction: column;
     @include base.bg-lightgray;
     margin-top: -50px;
     padding: 16px;
     border-radius: 32px 32px 0px 0px;
-
+    
     & h3 {
         font-weight: 300;
         text-transform: uppercase;
@@ -36,7 +38,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 95%;
     }
 
     &__name > i {
@@ -44,17 +45,20 @@
     }
 
     &__grid {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        @include base.desktop-only {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
+        }
+        
     }
     
     &__repas {
         background-color: white;
-        display: flex;
-        flex-direction: column;
         padding: 2px 10px 0 10px;
         border-radius: 20px;
+        margin-bottom: 8px;
     }
 
     &__title {

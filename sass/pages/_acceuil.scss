@@ -31,17 +31,28 @@
 
 .fonction {
     padding: 32px;
+
     &__steps {
         padding: 0;
         list-style: none;
         counter-reset: c_Liste;
+
+        @include base.desktop-only {
+            display: flex;
+            justify-content: space-evenly;
+        }
     }
+
     &__item {
         @include base.bg-lightgray;
         padding: 25px;
         border-radius: 10px;
         margin-bottom: 25px;
         position: relative;
+
+        @include base.desktop-only {
+            width: 25%;
+        }
     }
 
     &__item::before {
@@ -56,6 +67,7 @@
         padding: 2.5px 7px;
         position: absolute;
         left: -15px;
+
     }
 
     &__item>i {
@@ -65,16 +77,26 @@
 }
 
 .diner {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
     @include base.bg-lightgray;
     padding: 32px;
+    
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 16px;
+        @include base.desktop-only {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
 }
 
 .card {
     position: relative;
     background-color: white;
+    text-decoration: none;
+    display: block;
     line-height: 8px;
     border-radius: 16px;
 
@@ -84,6 +106,7 @@
         object-fit: cover;
         margin-bottom: 16px;
     }
+
     &>span {
         position: absolute;
         right: 16px;
@@ -110,4 +133,3 @@
         font-size: 25px;
     }
 }
-

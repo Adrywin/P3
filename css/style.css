@@ -91,12 +91,23 @@ h1, h2, h3, h4, h5, h6, p, button, li, span {
   list-style: none;
   counter-reset: c_Liste;
 }
+@media screen and (min-width: 992px) {
+  .fonction__steps {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 .fonction__item {
   background-color: rgb(245, 245, 245);
   padding: 25px;
   border-radius: 10px;
   margin-bottom: 25px;
   position: relative;
+}
+@media screen and (min-width: 992px) {
+  .fonction__item {
+    width: 25%;
+  }
 }
 .fonction__item::before {
   display: flex;
@@ -116,16 +127,27 @@ h1, h2, h3, h4, h5, h6, p, button, li, span {
 }
 
 .diner {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
   background-color: rgb(245, 245, 245);
   padding: 32px;
+}
+.diner__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
+@media screen and (min-width: 992px) {
+  .diner__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .card {
   position: relative;
   background-color: white;
+  text-decoration: none;
+  display: block;
   line-height: 8px;
   border-radius: 16px;
 }
@@ -178,6 +200,8 @@ h1, h2, h3, h4, h5, h6, p, button, li, span {
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(245, 245, 245);
   margin-top: -50px;
   padding: 16px;
@@ -193,22 +217,25 @@ h1, h2, h3, h4, h5, h6, p, button, li, span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
 }
 .menu__name > i {
   font-size: 32px;
 }
 .menu__grid {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 992px) {
+  .menu__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
 }
 .menu__repas {
   background-color: white;
-  display: flex;
-  flex-direction: column;
   padding: 2px 10px 0 10px;
   border-radius: 20px;
+  margin-bottom: 8px;
 }
 .menu__title {
   font-weight: 500;
