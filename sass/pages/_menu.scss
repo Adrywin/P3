@@ -66,7 +66,7 @@
         background: base.$gradient;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transition: transform 500ms ease-in-out, opacity 500ms;
+        transition: transform 1s ease-in-out, opacity 2s;
     }
 
     &__grid {
