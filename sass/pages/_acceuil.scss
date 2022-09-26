@@ -75,7 +75,7 @@
 
     &__subtitle {
         margin-top: 0;
-        font-weight: 300;
+        font-weight: 100;
     }
 }
 
@@ -171,12 +171,14 @@
     }
 
     &__title {
+        font-size: 20px;
         margin: 0;
     }
 
     &__subtitle {
         display: flex;
         justify-content: space-between;
+        font-weight: 100;
     }
 
     &__heart {
