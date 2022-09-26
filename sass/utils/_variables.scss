@@ -3,6 +3,7 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $gris-f: rgb(231, 231, 231);
 $gris-l: rgb(245, 245, 245);
+$gradient: -webkit-linear-gradient($color-secondary, $color-primary);
 
 $breakpoints: (
     tablet: 768px,
