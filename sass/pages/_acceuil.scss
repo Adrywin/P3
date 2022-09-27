@@ -77,12 +77,13 @@
 .diner {
     @include base.bg-lightgray;
     padding: 32px;
-    
+
     &__grid {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 16px;
+
         @include base.desktop-only {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
@@ -132,13 +133,13 @@
         right: 8px;
         font-size: 25px;
         z-index: 1;
-   }
+    }
 
     &__heart:hover {
         opacity: 0;
     }
 
-    &__heart:hover + &__heart--hidden {
+    &__heart:hover+&__heart--hidden {
         opacity: 1;
         transform: scale(1.25);
     }

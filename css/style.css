@@ -3,6 +3,14 @@
   font-weight: 100;
 }
 
+.fonction__title {
+  font-size: 32px;
+}
+
+.diner__title {
+  font-size: 32px;
+}
+
 .diner .card__title {
   font-size: 20px;
 }
@@ -11,6 +19,7 @@
 }
 
 .menu__n-title {
+  font-size: 24px;
   font-family: "Shrikhand", sans-serif;
 }
 .menu h3 {
@@ -35,7 +44,16 @@
   font-weight: 100;
 }
 
-h1, h2, h3, h4, h5, h6, p, button, li, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+li,
+span {
   font-family: "Roboto", sans-serif;
 }
 
